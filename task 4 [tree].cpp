@@ -1,9 +1,3 @@
-/*
-Nama : Sekar Gesti Amalia Utami
-NIM  : M0521071
-Prodi: Informatika
-*/
-
 // Jawaban Soal Nomor 1
 #include <iostream>
 #include <vector>
