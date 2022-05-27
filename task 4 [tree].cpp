@@ -1,4 +1,4 @@
-// Jawaban Soal Nomor 1 tanpa Deletion Tree
+// Jawaban Soal Nomor 1 tanpa Deletion Tree :
 #include <iostream>
 #include <vector>
 
@@ -113,7 +113,7 @@ int main(){
     root.ShowPostOrderTree();
     cout << "\n";
 
-    // Jawaban Soal Nomor 2 dengan Deletion Tree
+    // Jawaban Soal Nomor 2 dengan Deletion Tree :
     root.m_children[0].DeleteNodeIndex(0);
 
     Node child_2_5(3);
