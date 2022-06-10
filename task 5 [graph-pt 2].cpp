@@ -1,0 +1,78 @@
+#include <iostream>
+
+using namespace std;
+
+enum tempat_t {
+    RUMAH,
+    UNIVERSITAS_SEBELAS_MARET,
+    RUMAH_SAKIT_DR_MOEWARDI,
+    SMP_NEGERI_8_SURAKARTA,
+    PECEL_MADIUN_PUCANGSAWIT,
+    SMP_NEGERI_4_SURAKARTA,
+    SMA_NEGERI_3_SURAKARTA,
+    JUMLAH_TEMPAT
+};
+
+
+int main(){
+    double kecepatan, jarakRute;
+
+    // adjacency matrix
+    double jarak[JUMLAH_TEMPAT][JUMLAH_TEMPAT];
+
+    jarak[RUMAH][UNIVERSITAS_SEBELAS_MARET] = 2.97;
+    jarak[UNIVERSITAS_SEBELAS_MARET][RUMAH] = 2.97;
+
+    jarak[RUMAH][PECEL_MADIUN_PUCANGSAWIT] = 2.54;
+    jarak[PECEL_MADIUN_PUCANGSAWIT][RUMAH] = 2.54;
+
+    jarak[UNIVERSITAS_SEBELAS_MARET][RUMAH_SAKIT_DR_MOEWARDI] = 2.86;
+    jarak[RUMAH_SAKIT_DR_MOEWARDI][UNIVERSITAS_SEBELAS_MARET] = 2.86;
+
+    jarak[UNIVERSITAS_SEBELAS_MARET][SMP_NEGERI_8_SURAKARTA] = 1.61;
+    jarak[SMP_NEGERI_8_SURAKARTA][UNIVERSITAS_SEBELAS_MARET] = 1.61;
+
+    jarak[RUMAH_SAKIT_DR_MOEWARDI][SMP_NEGERI_4_SURAKARTA] = 1.43;
+    jarak[SMP_NEGERI_4_SURAKARTA][RUMAH_SAKIT_DR_MOEWARDI] = 1.43;
+
+    jarak[SMP_NEGERI_8_SURAKARTA][SMP_NEGERI_4_SURAKARTA] = 2.99;
+    jarak[SMP_NEGERI_4_SURAKARTA][SMP_NEGERI_8_SURAKARTA] = 2.99;
+
+    jarak[SMP_NEGERI_8_SURAKARTA][SMA_NEGERI_3_SURAKARTA] = 1.25;
+    jarak[SMA_NEGERI_3_SURAKARTA][SMP_NEGERI_8_SURAKARTA] = 1.25;
+
+    jarak[PECEL_MADIUN_PUCANGSAWIT][SMP_NEGERI_4_SURAKARTA] = 4.00;
+    jarak[SMP_NEGERI_4_SURAKARTA][PECEL_MADIUN_PUCANGSAWIT] = 4.00;
+
+    jarak[PECEL_MADIUN_PUCANGSAWIT][SMA_NEGERI_3_SURAKARTA] = 2.28;
+    jarak[SMA_NEGERI_3_SURAKARTA][PECEL_MADIUN_PUCANGSAWIT] = 2.28;
+
+    jarak[RUMAH][RUMAH] = 0.0;
+    jarak[UNIVERSITAS_SEBELAS_MARET][UNIVERSITAS_SEBELAS_MARET] = 0.0;
+    jarak[RUMAH_SAKIT_DR_MOEWARDI][RUMAH_SAKIT_DR_MOEWARDI] = 0.0;
+    jarak[SMP_NEGERI_8_SURAKARTA][SMP_NEGERI_8_SURAKARTA] = 0.0;
+    jarak[PECEL_MADIUN_PUCANGSAWIT][PECEL_MADIUN_PUCANGSAWIT] = 0.0;
+    jarak[SMP_NEGERI_4_SURAKARTA][SMP_NEGERI_4_SURAKARTA] = 0.0;
+    jarak[SMA_NEGERI_3_SURAKARTA][SMA_NEGERI_3_SURAKARTA] = 0.0;
+
+    jarak[RUMAH][SMA_NEGERI_3_SURAKARTA] = -1.0;
+    jarak[SMA_NEGERI_3_SURAKARTA][RUMAH] = -1.0;
+
+    jarak[RUMAH_SAKIT_DR_MOEWARDI][SMP_NEGERI_8_SURAKARTA] = -1.0;
+    jarak[SMP_NEGERI_8_SURAKARTA][RUMAH_SAKIT_DR_MOEWARDI] = -1.0;
+
+    jarak[SMP_NEGERI_8_SURAKARTA][PECEL_MADIUN_PUCANGSAWIT] = -1.0;
+    jarak[PECEL_MADIUN_PUCANGSAWIT][SMP_NEGERI_8_SURAKARTA] = -1.0;
+
+    jarak[SMP_NEGERI_4_SURAKARTA][SMA_NEGERI_3_SURAKARTA] = -1.0;
+    jarak[SMA_NEGERI_3_SURAKARTA][SMP_NEGERI_4_SURAKARTA] = -1.0;
+
+    jarakRute = jarak[0][1] + jarak[1][3] + jarak[3][6];
+    // waktu = 10 menit, diubah dari menit jadi jam maka dibagi 60
+    // kecepatan = jarak/waktu = jarak : 10/60 = (jarak * 60) / 10
+    kecepatan = (jarakRute*60)/10;
+
+    cout << "\n=> Jadi, kecepatan rata-rata Pak Brata melalui rute Rumah - Universitas Sebelas Maret - SMP Negeri 8 Surakarta - SMA Negeri 3 Surakarta dalam waktu 10 menit adalah " << kecepatan << " km/jam.\n" << endl;
+
+    return 0;
+}
