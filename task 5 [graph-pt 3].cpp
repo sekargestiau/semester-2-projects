@@ -3,6 +3,7 @@
 
 using namespace std;
 
+
 map<std::string, std::string> perwakilan;
 
 string find(string X) {
