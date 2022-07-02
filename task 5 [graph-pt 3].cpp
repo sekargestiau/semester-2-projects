@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 map<std::string, std::string> perwakilan;
 
 string find(string X) {
@@ -12,7 +11,6 @@ string find(string X) {
         }
         return find(perwakilan[X]);
     }
-
 
 void merge(string A, string B) {
     string wakilA = find(A);
