@@ -2,7 +2,6 @@
 #include <cstdlib>
 #include <ctime>
 
-// INSTRUKSI : masukkan 2 digit terakhir NIM kalian di sini (contoh 47 apabila M0520047)
 #define NIM 71
 
 enum feedback_t {
