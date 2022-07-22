@@ -3,7 +3,7 @@
 **Program Penentuan Jumlah Siswa Remedial dan Penentuan Nilai-nilai Ujian Tertinggi**
 
 Nama	: Sekar Gesti Amalia Utami
-NIM		: M0521071
+NIM	: M0521071
 Kelas	: C
 Prodi	: Informatika
 
