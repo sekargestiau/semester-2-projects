@@ -32,7 +32,7 @@ int maks_tebakan(int nilai_maks) {
 }
 
 // ============================================================================
-// INSTRUKSI : tambahkan beberapa variabel di sini apabila perlu
+
 int batas_kanan = 100 + NIM;
 int batas_kiri = 1;
 
