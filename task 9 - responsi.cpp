@@ -31,3 +31,41 @@ struct ProductCode{
     int stockProduk;
     int hargaProduk;
 };
+
+enum node_t {
+    GERBANG_DEPAN,
+    GERBANG_BELAKANG,
+    REKTORAT,
+    AUDITORIUM,
+    PERPUSTAKAAN,
+    UPT_TIK,
+    F_MIPA,
+    F_KEDOKTERAN,
+    F_PERTANIAN,
+    DANAU,
+    IKA,
+    SPMB,
+    BAA_BAPSI,
+    MENWA,
+    LPPM,
+    UNS_INN,
+    RUMAH_DINAS,
+    F_ILMU_BUDAYA,
+    F_EKONOMI_BISNIS,
+    F_ILMU_SOSIAL_DAN_POLITIK,
+    F_KEGURUAN_DAN_ILMU_PENDIDIKAN,
+    PASCASARJANA,
+    BIRO_MAWA,
+    STUDENT_CENTER,
+    MEDICAL_CENTER,
+    SPAM,
+    STADION,
+    GOR,
+    PORSIMA,
+    PPLH,
+
+    NODE_COUNT,
+    NODE_INVALID = -1
+};
+
+map<node_t, string> node_name;
