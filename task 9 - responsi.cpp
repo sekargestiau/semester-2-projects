@@ -87,7 +87,7 @@ string find(string X) {
             return X;
         }
         return find(perwakilan[X]);
-    }
+}
 
 
 void merge(string A, string B) {
