@@ -69,3 +69,30 @@ enum node_t {
 };
 
 map<node_t, string> node_name;
+
+// graph dalam bentuk adjacency matrix
+double graph[NODE_COUNT][NODE_COUNT];
+
+void add_edge(node_t src, node_t dst, double weight) {
+    graph[src][dst] = weight;
+    graph[dst][src] = weight;
+}
+
+
+map<string, string> perwakilan;
+
+string find(string X) {
+        if (perwakilan[X] == X) {
+            return X;
+        }
+        return find(perwakilan[X]);
+    }
+
+
+void merge(string A, string B) {
+    string wakilA = find(A);
+    string wakilB = find(B);
+
+    perwakilan[wakilA] = wakilB;
+
+}
