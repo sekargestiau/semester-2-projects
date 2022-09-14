@@ -97,3 +97,8 @@ void merge(string A, string B) {
     perwakilan[wakilA] = wakilB;
 
 }
+
+int main()
+{
+    //declaration
+    int choice, choice2, choice3;
