@@ -103,3 +103,8 @@ int main()
 {
     //declaration
     int choice, choice2, choice3;
+   
+    //list
+    list<string> DaftarProgramKerja;
+    string isiDaftarProgramKerja[100];
+    string jawabHapus;
