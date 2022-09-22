@@ -108,3 +108,8 @@ int main()
     list<string> DaftarProgramKerja;
     string isiDaftarProgramKerja[100];
     string jawabHapus;
+   
+    //stack
+    stack<string> ArsipSurat; 
+    string namaSurat[100];
+
