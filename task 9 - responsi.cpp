@@ -112,4 +112,8 @@ int main()
     //stack
     stack<string> ArsipSurat; 
     string namaSurat[100];
+   
+    //queue
+    queue<string> UrutanPelayananPremiumApp;
+    string namaPemesan[100];
 
