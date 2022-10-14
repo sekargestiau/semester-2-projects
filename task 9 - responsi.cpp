@@ -5,6 +5,7 @@
 Nama  : Sekar Gesti Amalia Utami
 NIM   : M0521071
 Kelas : C
+Prodi : Informatika
 
 */
 
