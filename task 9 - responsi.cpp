@@ -118,3 +118,13 @@ int main()
     queue<string> UrutanPelayananPremiumApp;
     string namaPemesan[100];
 
+    //set
+    set<string> CekAnggotaHimpunan;
+    string namaAnggota[100];
+    string cekID;
+
+    //map
+    int SaldoAwal, SaldoAkhir, NumProduct, CurrentStock;
+    string InputCode;
+    map <string, ProductCode> DataProduct;
+    ProductCode code;
