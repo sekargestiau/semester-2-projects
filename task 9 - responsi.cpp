@@ -128,3 +128,10 @@ int main()
     string InputCode;
     map <string, ProductCode> DataProduct;
     ProductCode code;
+   
+    //graf
+    set<node_t> visited, unvisited;
+    map<node_t, double> path_distance;
+    map<node_t, node_t> path_parent;
+    stack<node_t> path_stack;
+   
