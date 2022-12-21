@@ -18,7 +18,7 @@ Prodi : Informatika
 #include <math.h>
 #include <string>
 #include <iterator>
-#include <vector>
+// #include <vector>
 
 using namespace std;
 
